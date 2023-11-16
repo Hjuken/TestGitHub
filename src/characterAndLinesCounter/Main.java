@@ -10,6 +10,7 @@ public class Main {
         String savedStrings = "";
         int characterCount = 0;
         int lineCount = 0;
+        int wordCount = 0;
         String input;
 
         System.out.println("Write your text, to end text write: Stop");
@@ -22,6 +23,7 @@ public class Main {
 
                 characterCount = Logic.countCharacters(savedStrings);
                 lineCount = countLinesAndCharacter.countLines(savedStrings);
+                wordCount = countLinesAndCharacter.countWords(savedStrings);
 
             } else {
                 countLinesAndCharacter.setWordArray(savedStrings.trim());
@@ -31,7 +33,7 @@ public class Main {
         }
         System.out.println("Number of characters: " + characterCount);
         System.out.println("Number of lines: " + lineCount);
-
+        System.out.println("Number of words: " + wordCount);
 
     }
 

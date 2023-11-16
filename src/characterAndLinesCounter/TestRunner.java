@@ -31,6 +31,19 @@ public class TestRunner {
     }
 
     @Test
+    public void testCountWords(){
+        //Arrange
+        Logic logic = new Logic();
+        String input = "Jag skriver fyra ord!";
+        int expected = 4;
+        //Act
+        int actual = logic.countWords(input);
+        //Assert
+        assertEquals(expected,actual);
+    }
+
+
+    @Test
     public void testGetArrayLength(){
         Logic logic = new Logic();
         int expected = 10;

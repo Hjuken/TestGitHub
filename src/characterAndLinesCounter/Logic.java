@@ -13,10 +13,6 @@ public class Logic {
         return words.length;
     }
 
-    public String[] getWordsArray() {
-        return words;
-    }
-
     public static int countCharacters(String input){
         int count = 0;
 
@@ -37,6 +33,11 @@ public class Logic {
         }
         scanner.close();
         return lineCount;
+    }
+
+    public int countWords(String input){
+        String[] wordsArray = input.split("\\s+");
+        return wordsArray.length;
     }
 
 }
