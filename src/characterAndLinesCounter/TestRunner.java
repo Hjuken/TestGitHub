@@ -22,7 +22,7 @@ public class TestRunner {
         String input = " Hej \n igen \n Adam \n och \n Staffan!";
         int expected = 5;
         //Act
-        int actual = counter.getcountLines(input);
+        int actual = counter.getCountLines(input);
         //Assert
         assertEquals(expected,actual);
     }
@@ -34,7 +34,7 @@ public class TestRunner {
         String input = "Hur är det med ögat Adam?";
         int expected = 6;
         //Act
-        int actual = counter.getcountWords(input);
+        int actual = counter.getCountWords(input);
         //Assert
         assertEquals(expected,actual);
     }

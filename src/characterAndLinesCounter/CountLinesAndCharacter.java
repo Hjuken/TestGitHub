@@ -33,11 +33,11 @@ public class CountLinesAndCharacter {
         return wordsArray.length;
     }
 
-    public int getcountLines(String input) {
+    public int getCountLines(String input) {
         return countLines(input);
     }
 
-    public int getcountWords(String input) {
+    public int getCountWords(String input) {
         return countWords(input);
     }
 
