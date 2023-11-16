@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Logic countLinesAndCharacter = new Logic();
+        CountLinesAndCharacter countLinesAndCharacter = new CountLinesAndCharacter();
 
         String savedStrings = "";
         int characterCount = 0;
@@ -21,7 +21,7 @@ public class Main {
             if (!lowerCaseInput.equals("stop")) {
                 savedStrings += input + "\n";
 
-                characterCount = Logic.countCharacters(savedStrings);
+                characterCount = CountLinesAndCharacter.countCharacters(savedStrings.trim());
                 lineCount = countLinesAndCharacter.countLines(savedStrings);
                 wordCount = countLinesAndCharacter.countWords(savedStrings);
 
@@ -29,12 +29,10 @@ public class Main {
                 countLinesAndCharacter.setWordArray(savedStrings.trim());
                 break;
             }
-
         }
         System.out.println("Number of characters: " + characterCount);
         System.out.println("Number of lines: " + lineCount);
         System.out.println("Number of words: " + wordCount);
 
     }
-
 }

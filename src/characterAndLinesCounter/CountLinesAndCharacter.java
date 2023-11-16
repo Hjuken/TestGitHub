@@ -1,16 +1,10 @@
 package characterAndLinesCounter;
-
 import java.util.Scanner;
 
-public class Logic {
-    private String[] words;
+public class CountLinesAndCharacter {
 
     public void setWordArray(String input){
-        words = input.split(" ");
-    }
-
-    public int getArrayLength(){
-        return words.length;
+        String[] word = input.split(" ");
     }
 
     public static int countCharacters(String input){
@@ -31,7 +25,6 @@ public class Logic {
             scanner.nextLine();
             lineCount++;
         }
-        scanner.close();
         return lineCount;
     }
 
@@ -40,4 +33,15 @@ public class Logic {
         return wordsArray.length;
     }
 
+    public int getcountLines(String input) {
+        return countLines(input);
+    }
+
+    public int getcountWords(String input) {
+        return countWords(input);
+    }
+
+    public int getCountCharacters(String input) {
+        return countCharacters(input);
+    }
 }
